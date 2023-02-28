@@ -1,5 +1,6 @@
 .PHONY: all \
 		setup \
+		lint \
 		unittest \
 		pytest \
 		run
@@ -19,4 +20,4 @@ pytest: ## Start testing with pytest
 	. .venv/bin/activate; pytest tests_pytest.py
 
 run: ## Run
-	. .venv/bin/activate; python main.python main.py
+	. .venv/bin/activate; python main.py
